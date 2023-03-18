@@ -21,3 +21,4 @@ Interesting is here, always the first number.
 So if you think of a number, and the desired number is available in the corresponding set, then you simply always count the first number together. 
 
 
+![lg](https://user-images.githubusercontent.com/104991886/226145750-26ca86ab-03e9-499d-8947-44669d8a8fd3.png)
