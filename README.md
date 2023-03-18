@@ -1,7 +1,8 @@
-# LittleGame
-A little game, if you please.
+# LittleGame<br>
 
-There is a set of 64 (2^6) numbers. {0,1,2,..,61,62,63}	
+**A little game, if you please.** 
+
+<br>There is a set of 64 (2^6) numbers. {0,1,2,..,61,62,63}	
 
 Take 2^x numbers out of this set in turn. (alternating distance = 2^x).	
 
