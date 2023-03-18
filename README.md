@@ -19,5 +19,4 @@ Interesting is here, always the first number.
 
 So if you think of a number, and the desired number is available in the corresponding set, then you simply always count the first number together. 
 
-A program in C# will follow soon.
 
