@@ -20,5 +20,10 @@ Interesting is here, always the first number.
 
 So if you think of a number, and the desired number is available in the corresponding set, then you simply always count the first number together.<br><br>
 
-Think of a number between 1 to 63<br>
-![lg](https://user-images.githubusercontent.com/104991886/226145750-26ca86ab-03e9-499d-8947-44669d8a8fd3.png)
+Think of a number between 1 to 63<br><br>
+
+Console-App:<br>
+![lg](https://user-images.githubusercontent.com/104991886/226145750-26ca86ab-03e9-499d-8947-44669d8a8fd3.png)<br><br>
+
+Win-App<br>
+![lgfrm](https://user-images.githubusercontent.com/104991886/226210474-72ae4e4a-e4e8-45c0-8fae-714b76340016.png)
