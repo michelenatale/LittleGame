@@ -2,7 +2,6 @@
 
 namespace michele.natale.Games;
 
-
 internal class LittleGameEventArgs : EventArgs
 {
   public int Sum { get; set; }
