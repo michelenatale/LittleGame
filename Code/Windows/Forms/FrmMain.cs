@@ -62,7 +62,7 @@ public partial class FrmMain : Form
   private void Start()
   {
     this.SetTlpButtons(1);
-    this.RaisEvent(true, false);
+    this.RaiseEvent(true, false);
   }
 
   private void Run(bool answer)
@@ -74,7 +74,7 @@ public partial class FrmMain : Form
       return;
     }
 
-    this.RaisEvent(false, answer);
+    this.RaiseEvent(false, answer);
 
     if (this.Index > 5)
     {
@@ -89,7 +89,7 @@ public partial class FrmMain : Form
     }
   }
 
-  private void RaisEvent(bool newgame, bool answer)
+  private void RaiseEvent(bool newgame, bool answer)
   {
     var args = new LittleGameEventArgs
     {

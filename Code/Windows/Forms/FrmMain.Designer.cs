@@ -7,7 +7,7 @@ partial class FrmMain
   /// <summary>
   ///  Required designer variable.
   /// </summary>
-  private System.ComponentModel.IContainer components = null;
+  private System.ComponentModel.IContainer  Components = null;
 
   /// <summary>
   ///  Clean up any resources being used.
@@ -15,10 +15,8 @@ partial class FrmMain
   /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
   protected override void Dispose(bool disposing)
   {
-    if (disposing && (components != null))
-    {
-      components.Dispose();
-    }
+    if (disposing && (Components != null)) 
+      Components.Dispose(); 
     base.Dispose(disposing);
   }
 
@@ -30,6 +28,7 @@ partial class FrmMain
   /// </summary>
   private void InitializeComponent()
   {
+    //this.Components = new System.ComponentModel.Container();
     this.MenuMain = new System.Windows.Forms.MenuStrip();
     this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
     this.StartNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

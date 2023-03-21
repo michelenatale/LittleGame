@@ -18,14 +18,8 @@ partial class LittleGame
     }
   }
 
-  private static void StartCreateInput()
-  {
-    var result = CreateInput().OrderBy(x => Rand.Next()).ToArray();
-    for (var i = 0; i < result.Length; i++)
-      if ((Rand.Next() & 1) == 0)
-        Array.Reverse(result[i]);
-    MInput = result;
-  }
+  private static void StartCreateInput() =>
+    MInput = MixInput(CreateInput());
 
   private static int[][] CreateInput()
   {

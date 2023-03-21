@@ -35,7 +35,7 @@ partial class LittleGame
     for (var i = 0; i < 4; i++)
       for (var j = 0; j < 8; j++)
         result[i][j] = this.Datas[this.Index][i * 8 + j].ToString();
-    return result.Select(str => str).ToArray();
+    return result.ToArray();
   }
 
   private void Clear()
