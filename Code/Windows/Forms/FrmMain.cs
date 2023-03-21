@@ -28,7 +28,6 @@ public partial class FrmMain : Form
     this.DgvMain.RowsDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
     this.DgvMain.RowsAdded += new DataGridViewRowsAddedEventHandler(this.DgvMain_RowsAdded!);
 
-
     this.Icon = FrmLittleGame2.Properties.Resources.myIcon;
   }
 
@@ -54,7 +53,7 @@ public partial class FrmMain : Form
   private void DgvMain_CellContentClick(object sender, DataGridViewCellEventArgs e) =>
     this.DgvMain.ClearSelection();
 
-  private void CloseForm() => this.Close();
+  private void CloseForm() { this.TblButtonsHolder?.Dispose(); this.Close(); }
 
   private void Start()
   {

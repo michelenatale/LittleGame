@@ -180,6 +180,7 @@ partial class FrmMain
     this.DgvMain.Size = new System.Drawing.Size(414, 295);
     this.DgvMain.TabIndex = 100;
     this.DgvMain.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMain_CellContentClick);
+    this.DgvMain.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMain_CellContentClick);
     // 
     // TlpButtons
     // 

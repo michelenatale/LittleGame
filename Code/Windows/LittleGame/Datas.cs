@@ -7,27 +7,27 @@ using static michele.natale.Randoms.RandomHoder;
 partial class LittleGame
 {
   private static bool First = false;
-  private static int[][] MData = Array.Empty<int[]>();
+  private static int[][] MInput = Array.Empty<int[]>();
 
-  public static int[][] Data
+  private static int[][] Input
   {
     get
     {
       if (!First) { WarmUp(); First = false; }
-      return MData = CopyMixData(MData);
+      return MInput = CopyMixInput(MInput);
     }
   }
 
-  public static void Start()
+  private static void StartCreateInput()
   {
-    var result = CreateDatas().OrderBy(x => Rand.Next()).ToArray();
+    var result = CreateInput().OrderBy(x => Rand.Next()).ToArray();
     for (var i = 0; i < result.Length; i++)
       if ((Rand.Next() & 1) == 0)
         Array.Reverse(result[i]);
-    MData = result;
+    MInput = result;
   }
 
-  private static int[][] CreateDatas()
+  private static int[][] CreateInput()
   {
     var result = Enumerable.Range(0, 6).Select(x => new int[32]).ToArray();
     for (int row = 0, value = 1 << row; row < result.Length; row++, value = 1 << row)
@@ -37,24 +37,25 @@ partial class LittleGame
     return result;
   }
 
-  private static int[][] CopyMixData(int[][] data) =>
-    MixData(CopyData(data));
+  private static int[][] CopyMixInput(int[][] input) =>
+    MixInput(CopyInput(input));
 
-  private static int[][] MixData(int[][] data)
+  private static int[][] MixInput(int[][] input)
   {
-    var result = data.OrderBy(x => Rand.Next()).ToArray();
+    var result = input.OrderBy(x => Rand.Next()).ToArray();
     for (var i = 0; i < result.Length; i++)
       if ((Rand.Next() & 1) == 0)
         Array.Reverse(result[i]);
     return result;
   }
 
-  private static int[][] CopyData(int[][] data)
+  private static int[][] CopyInput(int[][] input)
   {
-    var result = Enumerable.Range(0, 6).Select(x => new int[32]).ToArray();
-    for (int row = 0; row < result.Length; row++)
-      for (int col = 0; col < result[row].Length; col++)
-        result[row][col] = data[row][col];
+    int rlength = input.Length, clength = input[0].Length;
+    var result = Enumerable.Range(0, rlength).Select(x => new int[clength]).ToArray();
+    for (int row = 0; row < rlength; row++)
+      for (int col = 0; col < clength; col++)
+        result[row][col] = input[row][col];
     return result;
   }
 }
