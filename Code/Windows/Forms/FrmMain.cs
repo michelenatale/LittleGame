@@ -53,7 +53,11 @@ public partial class FrmMain : Form
   private void DgvMain_CellContentClick(object sender, DataGridViewCellEventArgs e) =>
     this.DgvMain.ClearSelection();
 
-  private void CloseForm() { this.TblButtonsHolder?.Dispose(); this.Close(); }
+  private void CloseForm()
+  {
+    this.TblButtonsHolder?.Dispose();
+    this.Close();
+  }
 
   private void Start()
   {
