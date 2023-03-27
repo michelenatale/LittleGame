@@ -15,6 +15,8 @@ internal partial class LittleGame: LittleGameBase
     frm!.LittleGameHandler += App_LittleGame!;
     frm!.ShowDialog();
 
+    frm!.LittleGameHandler -= App_LittleGame!;
+
     this.Clear();
   }
 }
