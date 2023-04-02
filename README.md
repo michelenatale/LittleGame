@@ -6,7 +6,7 @@
 
 Take 2^x numbers out of this set in turn. (alternating distance = 2^x).	
 
-Do this 6 times, iterating x by 1 each time. The starting value is in each case 2^x.
+Do this 6 times, increment x by 1 each time. The starting value is in each case 2^x.
 
 ![pic1](https://user-images.githubusercontent.com/104991886/226114360-341f957c-88d9-4d44-a78d-a9d6a3a92873.png)
 
