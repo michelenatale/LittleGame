@@ -13,7 +13,7 @@ public class LittleGame
   {
     get
     {
-      if (!First) { WarmUp(); First = false; }
+      if (!First) { WarmUp(); First = true; }
       return MData = CopyMixData(MData);
     }
   }
